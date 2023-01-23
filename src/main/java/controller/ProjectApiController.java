@@ -1,5 +1,6 @@
 package controller;
 
+//TODO:first of all implementing all controllers and items connected with it
 
 @Api
 @RestController
@@ -22,5 +23,10 @@ public class ProjectApiController {
 		
 	}
 	
-	@ApiOperation()
+	@ApiOperation(value="gets a project by an id")
+	@RequestMapping(path="/api/project/{id}", method=RequestMethod.GET)
+	
+	@ApiOperation(value="returns list of projects with their id")
+	@RequestMapping
+	
 }

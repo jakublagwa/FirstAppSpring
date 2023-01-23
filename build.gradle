@@ -25,6 +25,9 @@ ext {
 }
 
 dependencies {
+	//obsługa m. in. @RequestMapping()
+	implementation 'org.springframework:spring-webmvc:5.3.6'
+	
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
